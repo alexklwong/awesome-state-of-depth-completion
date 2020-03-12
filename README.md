@@ -1,37 +1,33 @@
 # Awesome Depth Completion
 Updated March 11th, 2020
 
-## Sparse-to-Dense Depth Completion
+**Table of Contents**
+- [About Sparse-to-Dense Depth Completion](#unsupervised-void-benchmark)
+- [Current State of Depth Completion](#current-state-of-depth-completion)
+    - [Unsupervised VOID Benchmark](#unsupervised-void-benchmark)
+    - [Unsupervised KITTI Benchmark](#unsupervised-kitti-benchmark) 
+    - [Supervised KITTI Benchmark](#supervised-kitti-benchmark)
+    
+## About Sparse-to-Dense Depth Completion <a name="about-sparse-to-dense-depth-completion"></a>
 
 In the sparse-to-dense depth completion problem, one wants to infer the dense depth map of a 3-D scene given an RGB image and its corresponding sparse reconstruction in the form of a sparse depth map obtained either from computational methods such as SfM (Strcuture-from-Motion) or active sensors such as lidar or structured light sensors.
 
 **Example 1** 
-
-*An input RGB image from the VOID dataset*
-
-<img src="stairs.jpg">
-
-*Densified depth map -- colored and back-projected to 3-D*
-
-<img src="stairs.gif">
-
+| *Input RGB image from the VOID dataset*    | *Densified depth map -- colored and back-projected to 3-D* |
+| :----------------------------------------- | :--------------------------------------------------------: |
+| <img src="stairs.jpg" width="400"> | <img src="stairs.gif"> |
 
 **Example 2** 
-
-*An input RGB image from the KITTI dataset*
-
-<img src="0000000033.jpg">
-
-*Densified depth map -- colored and back-projected to 3-D*
-
-<img src="0000000033.gif">
+| *Input RGB image from the KITTI dataset*    | *Densified depth map -- colored and back-projected to 3-D* |
+| :------------------------------------------ | :--------------------------------------------------------: |
+| <img src="0000000033.jpg" width="400"> | <img src="0000000033.gif"> |
 
 
-
-## Current State of Depth Completion Methods
+## Current State of Depth Completion Methods <a name="current-state-of-depth-completion"></a>
 
 Here we compile both unsupervised/self-supervised (monocular and stereo) and supervised methods published in recent conferences and journals on the VOID (Wong et. al., 2020) and KITTI (Uhrig et. al., 2017) depth completion benchmarks. Our ranking considers all four metrics rather than just RMSE.
 
+**Quick Links**
 - [Unsupervised VOID Benchmark](#unsupervised-void-benchmark)
 - [Unsupervised KITTI Benchmark](#unsupervised-kitti-benchmark)
 - [Supervised KITTI Benchmark](#supervised-kitti-benchmark)
