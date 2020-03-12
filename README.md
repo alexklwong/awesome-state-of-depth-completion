@@ -1,11 +1,58 @@
-# Current State of Depth Completion Methods
+# Awesome Depth Completion
 Updated March 11th, 2020
 
-Here we compile both supervised and unsupervised/self-supervised (monocular and stereo) methods published in recent conferences and journals on the KITTI (Uhrig et. al., 2017) and VOID (Wong et. al., 2020) depth completion benchmarks. Our ranking considers all four metrics rather than just RMSE.
+## Sparse-to-Dense Depth Completion
 
-- [Supervised KITTI Benchmark](#supervised-kitti-benchmark)
-- [Unsupervised KITTI Benchmark](#unsupervised-kitti-benchmark)
+In the sparse-to-dense depth completion problem, one wants to infer the dense depth map of a 3-D scene given an RGB image and its corresponding sparse reconstruction in the form of a sparse depth map obtained either from computational methods such as SfM (Strcuture-from-Motion) or active sensors such as lidar or structured light sensors.
+
+**Example 1** 
+
+*An input RGB image from the VOID dataset*
+
+<img src="stairs.jpg">
+
+*Densified depth map -- colored and back-projected to 3-D*
+
+<img src="stairs.gif">
+
+
+**Example 2** 
+
+*An input RGB image from the KITTI dataset*
+
+<img src="0000000033.jpg">
+
+*Densified depth map -- colored and back-projected to 3-D*
+
+<img src="0000000033.gif">
+
+
+
+## Current State of Depth Completion Methods
+
+Here we compile both unsupervised/self-supervised (monocular and stereo) and supervised methods published in recent conferences and journals on the VOID (Wong et. al., 2020) and KITTI (Uhrig et. al., 2017) depth completion benchmarks. Our ranking considers all four metrics rather than just RMSE.
+
 - [Unsupervised VOID Benchmark](#unsupervised-void-benchmark)
+- [Unsupervised KITTI Benchmark](#unsupervised-kitti-benchmark)
+- [Supervised KITTI Benchmark](#supervised-kitti-benchmark)
+
+
+### Unsupervised VOID Depth Completion Benchmark <a name="unsupervised-void-benchmark"></a>
+| Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
+| :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
+| Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | **85.05** | **169.79** | **48.92** | **104.02** | 
+
+
+### Unsupervised KITTI Depth Completion Benchmark <a name="unsupervised-kitti-benchmark"></a>
+| Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
+| :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
+| Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | **299.41** | **1169.97** | **1.20** | **3.56** | 
+| Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [Tensorflow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 343.46 | 1263.19 | 1.32 | 3.58 | 
+| DFuseNet: Deep Fusion of RGB and Sparse Depth Information for Image Guided Dense Depth Completion | [ITSC 2019](https://arxiv.org/pdf/1902.00761) | [PyTorch](https://github.com/ShreyasSkandanS/DFuseNet) | 429.93 | 1206.66 | 1.79 | 3.62 |
+| In Defense of Classical Image Processing: Fast Depth Completion on the CPU | [CRV 2018](https://arxiv.org/pdf/1802.00036) | [Python](https://github.com/kujason/ip_basic) | 302.60 | 1288.46 | 1.29 | 3.78 |	
+| Self-supervised Sparse-to-Dense: Self- supervised Depth Completion from LiDAR and Monocular Camera | [ICRA 2019](https://arxiv.org/pdf/1807.00275) | [PyTorch](https://github.com/fangchangma/self-supervised-depth-completion) | 350.32 | 1299.85 | 1.57 | 4.07 |
+| Semantically Guided Depth Upsampling | [GCPR 2016](https://arxiv.org/pdf/1608.00753) | N/A | 605.47 | 2312.57 | 2.05 | 7.38 |
+      
 
 ### Supervised KITTI Depth Completion Benchmark <a name="supervised-kitti-benchmark"></a>
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
@@ -25,19 +72,3 @@ Here we compile both supervised and unsupervised/self-supervised (monocular and 
 | Learning morphological operators for depth completion | [ACIVS 2019](https://biblio.ugent.be/publication/8569539/file/8569540.pdf) | N/A | 310.49 | 1045.45 |	1.57 | 3.84 |
 | Sparsity Invariant CNNs | [3DV 2017](https://arxiv.org/pdf/1708.06500) | [Tensorflow](https://github.com/WHAAAT/sparse_convolution) | 416.14 | 1419.75	| 1.29 | 3.25	
 | Deep Convolutional Compressed Sensing for LiDAR Depth Completion | [ACCV 2018](https://arxiv.org/pdf/1803.08949) | [Tensorflow](https://github.com/nchodosh/Super-LiDAR) | 439.48 | 1325.37 |	3.19 | 59.39 |
-
-### Unsupervised KITTI Depth Completion Benchmark <a name="unsupervised-kitti-benchmark"></a>
-| Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
-| :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
-| Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | **299.41** | **1169.97** | **1.20** | **3.56** | 
-| Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [Tensorflow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 343.46 | 1263.19 | 1.32 | 3.58 | 
-| DFuseNet: Deep Fusion of RGB and Sparse Depth Information for Image Guided Dense Depth Completion | [ITSC 2019](https://arxiv.org/pdf/1902.00761) | [PyTorch](https://github.com/ShreyasSkandanS/DFuseNet) | 429.93 | 1206.66 | 1.79 | 3.62 |
-| In Defense of Classical Image Processing: Fast Depth Completion on the CPU | [CRV 2018](https://arxiv.org/pdf/1802.00036) | [Python](https://github.com/kujason/ip_basic) | 302.60 | 1288.46 | 1.29 | 3.78 |	
-| Self-supervised Sparse-to-Dense: Self- supervised Depth Completion from LiDAR and Monocular Camera | [ICRA 2019](https://arxiv.org/pdf/1807.00275) | [PyTorch](https://github.com/fangchangma/self-supervised-depth-completion) | 350.32 | 1299.85 | 1.57 | 4.07 |
-| Semantically Guided Depth Upsampling | [GCPR 2016](https://arxiv.org/pdf/1608.00753) | N/A | 605.47 | 2312.57 | 2.05 | 7.38 |
-
-### Unsupervised VOID Depth Completion Benchmark <a name="unsupervised-void-benchmark"></a>
-| Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
-| :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
-| Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | **85.05** | **169.79** | **48.92** | **104.02** | 
-      
