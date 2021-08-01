@@ -45,7 +45,7 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 ### Supervised VOID Depth Completion Benchmark <a name="supervised-void-benchmark"></a>
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
-| Scanline Resolution-Invariant Depth Completion Using a Single Image and Sparse LiDAR Point Cloud | [RA-L & IROS 2021](https://ieeexplore.ieee.org/document/9483665) | [N/A] | **59.40** | **181.42** | **19.37** | **46.56** | 
+| Scanline Resolution-Invariant Depth Completion Using a Single Image and Sparse LiDAR Point Cloud | [RA-L & IROS 2021](https://ieeexplore.ieee.org/document/9483665) | N/A | **59.40** | **181.42** | **19.37** | **46.56** | 
 
 ### Unsupervised KITTI Depth Completion Benchmark <a name="unsupervised-kitti-benchmark"></a>
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
@@ -67,9 +67,10 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | Non-Local Spatial Propagation Network for Depth Completion | [ECCV 2020](https://arxiv.org/pdf/2007.10042.pdf) | [PyTorch](https://github.com/zzangjinsun/NLSPN_ECCV20) | **199.5** | 741.68 | **0.84** | **1.99** |
 | CSPN++: Learning Context and Resource Aware Convolutional Spatial Propagation Networks for Depth Completion | [AAAI 2020](https://arxiv.org/pdf/1911.05377) | N/A | 209.28 | 743.69 | 0.90 | 2.07 | 
 | Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [Tensorflow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 203.96 | 832.94 | 0.85 | 2.10 | 	
-| Adaptive context-aware multi-modal network for depth completion | [TIP 2021](https://arxiv.org/abs/2008.10833) | [PyTorch](https://github.com/sshan-zhao/ACMNet) | 206.80 | 732.99 | 0.90 | 2.08 | 	
+| Adaptive context-aware multi-modal network for depth completion | [TIP 2021](https://arxiv.org/abs/2008.10833) | [PyTorch](https://github.com/sshan-zhao/ACMNet) | 206.80 | 732.99 | 0.90 | 2.08 |
 | PENet: Towards Precise and Efficient Image Guided Depth Completion | [ICRA 2021](https://arxiv.org/abs/2103.00783) | [PyTorch](https://github.com/JUGGHM/PENet_ICRA2021) | 210.55 | **730.08** | 0.94 | 2.17 | 	
 | FCFR-Net: Feature Fusion based Coarse- to-Fine Residual Learning for Depth Completion | [AAAI 2021](https://arxiv.org/pdf/2012.08270.pdf) | N/A | 217.15 | 735.81 | 0.98 | 2.20 | 
+| Learning Guided Convolutional Network for Depth Completion | [TIP 2020](https://ieeexplore.ieee.org/document/9286883) | [PyTorch](https://github.com/kakaxi314/GuideNet) | 218.83 | 736.24 | 0.99 | 2.25 |
 | DenseLiDAR: A Real-Time Pseudo Dense Depth Guided Depth Completion Network | [ICRA 2021](https://ieeexplore.ieee.org/document/9357967) | N/A | 214.13 | 755.41 | 0.96 | 2.25 |
 | A Multi-Scale Guided Cascade Hourglass Network for Depth Completion | [WACV 2020](http://openaccess.thecvf.com/content_WACV_2020/papers/Li_A_Multi-Scale_Guided_Cascade_Hourglass_Network_for_Depth_Completion_WACV_2020_paper.pdf) | [PyTorch](https://github.com/anglixjtu/msg_chn_wacv20) | 220.41 | 762.19 | 0.98 | 2.30 |
 | Sparse and noisy LiDAR completion with RGB guidance and uncertainty | [MVA 2019](https://arxiv.org/pdf/1902.05356) | [PyTorch](https://github.com/wvangansbeke/Sparse-Depth-Completion) | 215.02 | 772.87 | 0.93 | 2.19 |
@@ -80,6 +81,8 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | Scanline Resolution-Invariant Depth Completion Using a Single Image and Sparse LiDAR Point Cloud | [RA-L & IROS 2021](https://ieeexplore.ieee.org/document/9483665) | N/A | 233.34 | 809.09 | 1.06 | 2.57 |
 | Confidence propagation through cnns for guided sparse depth regression | [PAMI 2019](https://arxiv.org/pdf/1811.01791) | [PyTorch](https://github.com/abdo-eldesokey/nconv) | 233.26 | 829.98 | 1.03 | 2.60 |
 | Self-supervised Sparse-to-Dense: Self- supervised Depth Completion from LiDAR and Monocular Camera | [ICRA 2019](https://arxiv.org/pdf/1807.00275) | [PyTorch](https://github.com/fangchangma/self-supervised-depth-completion) | 249.95 | 814.73 | 1.21 | 2.80 |
+| 
+Uncertainty-Aware CNNs for Depth Completion: Uncertainty from Beginning to End | [CVPR 2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Eldesokey_Uncertainty-Aware_CNNs_for_Depth_Completion_Uncertainty_from_Beginning_to_End_CVPR_2020_paper.pdf) | [PyTorch](https://github.com/abdo-eldesokey/pncnn) | 251.77 | 960.05 | 1.05 | 3.37 |
 | Sparse and Dense Data with CNNs: Depth Completion and Semantic Segmentation | [3DV 2019](https://arxiv.org/pdf/1808.00769) | N/A | 234.81 | 917.64 | 0.95 | 2.17 |
 | Depth coefficients for depth completion | [CVPR 2019](https://arxiv.org/pdf/1903.05421) | N/A | 252.21 | 988.38 |	1.13 | 2.87 |
 |  Depth estimation via affinity learned with convolutional spatial propagation network | [ECCV 2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Xinjing_Cheng_Depth_Estimation_via_ECCV_2018_paper.pdf) | N/A | 279.46 | 1019.64 | 1.15 | 2.93 |
