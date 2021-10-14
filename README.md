@@ -12,12 +12,12 @@
 
 In the sparse-to-dense depth completion problem, one wants to infer the dense depth map of a 3-D scene given an RGB image and its corresponding sparse reconstruction in the form of a sparse depth map obtained either from computational methods such as SfM (Strcuture-from-Motion) or active sensors such as lidar or structured light sensors.
 
-**Example 1: VOID dataset (indoor)**
+**Example 1: [VOID dataset](https://github.com/alexklwong/void-dataset) (indoor VIO)**
 | *Input RGB image*  | *Sparse point cloud*| *Output point cloud from [KBNet](https://github.com/alexklwong/calibrated-backprojection-network)* |
 | :----------------------------------------- |  :----------------------------------------- | :--------------------------------------------------------: |
 | <img src="figures/void_teaser_image_306.png" width="400"> | <img src="figures/void_teaser_sparse_point_cloud_306.gif" width="400">  | <img src="figures/void_teaser_kbnet_output_306.gif" width="400">  |
 
-**Example 2: KITTI dataset (outdoor)**
+**Example 2: [KITTI dataset](http://www.cvlibs.net/datasets/kitti/) (outdoor lidar)**
 | *Input RGB image*    | *Output point cloud from [ScaffNet](https://github.com/alexklwong/learning-topology-synthetic-data)* |
 | :------------------------------------------ | :--------------------------------------------------------: |
 | <img src="figures/kitti_teaser_image.png" width="600"> | <img src="figures/kitti_teaser_scaffnet_output.gif" width="600"> |
