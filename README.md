@@ -15,12 +15,12 @@ In the sparse-to-dense depth completion problem, one wants to infer the dense de
 **Example 1: VOID dataset (indoor)**
 | *Input RGB image*  | *Sparse point cloud*| *Output point cloud from [KBNet](https://github.com/alexklwong/calibrated-backprojection-network)* |
 | :----------------------------------------- |  :----------------------------------------- | :--------------------------------------------------------: |
-| <img src="void_teaser_image_306.png" width="400"> | <img src="void_teaser_sparse_point_cloud_306.gif" width="400">  | <img src="void_teaser_kbnet_output_306.gif" width="400">  |
+| <img src="figures/void_teaser_image_306.png" width="400"> | <img src="figures/void_teaser_sparse_point_cloud_306.gif" width="400">  | <img src="figures/void_teaser_kbnet_output_306.gif" width="400">  |
 
 **Example 2: KITTI dataset (outdoor)**
 | *Input RGB image*    | *Output point cloud from [ScaffNet](https://github.com/alexklwong/learning-topology-synthetic-data)* |
 | :------------------------------------------ | :--------------------------------------------------------: |
-| <img src="kitti_teaser_image.png" width="600"> | <img src="kitti_teaser_scaffnet_output.gif" width="600"> |
+| <img src="figures/kitti_teaser_image.png" width="600"> | <img src="figures/kitti_teaser_scaffnet_output.gif" width="600"> |
 
 
 ## Current State of Depth Completion Methods <a name="current-state-of-depth-completion"></a>
@@ -53,7 +53,7 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
 | Unsupervised Depth Completion with Calibrated Backprojection Layers| [ICCV 2021](https://arxiv.org/pdf/2108.10531.pdf) | [PyTorch](https://github.com/alexklwong/calibrated-backprojection-network) | **256.76** | **1069.47** | **1.02**  | **2.95**  |
 | Learning Topology from Synthetic Data for Unsupervised Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2106.02994.pdf) | [Tensorflow](https://github.com/alexklwong/learning-topology-synthetic-data) | 280.76 | 1121.93 | 1.15 | 3.30 |
-| Project to Adapt: Domain Adaptation for Depth Completion from Noisy and Sparse Sensor Data | [ACCV 2020](https://openaccess.thecvf.com/content/ACCV2020/papers/Lopez-Rodriguez_Project_to_Adapt_Domain_Adaptation_for_Depth_Completion_from_Noisy_ACCV_2020_paper.pdf) | [PyTorch](https://github.com/alopezgit/project-adapt) | **280.42** | **1095.26** | 1.19 | 3.53 |
+| Project to Adapt: Domain Adaptation for Depth Completion from Noisy and Sparse Sensor Data | [ACCV 2020](https://openaccess.thecvf.com/content/ACCV2020/papers/Lopez-Rodriguez_Project_to_Adapt_Domain_Adaptation_for_Depth_Completion_from_Noisy_ACCV_2020_paper.pdf) | [PyTorch](https://github.com/alopezgit/project-adapt) | 280.42 | 1095.26 | 1.19 | 3.53 |
 | Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | 299.41 | 1169.97 | 1.20 | 3.56 |
 | A Surface Geometry Model for LiDAR Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2104.08466.pdf) | [Tensorflow](https://github.com/placeforyiming/RAL_Non-Learning_DepthCompletion) | 298.3 | 1239.84 | 1.21 | 3.76 |
 | Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [Tensorflow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 343.46 | 1263.19 | 1.32 | 3.58 |
