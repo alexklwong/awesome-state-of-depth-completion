@@ -15,12 +15,12 @@ In the sparse-to-dense depth completion problem, one wants to infer the dense de
 **Example 1: [VOID dataset](https://github.com/alexklwong/void-dataset) (indoor VIO)**
 | *Input RGB image*  | *Sparse point cloud*| *Output point cloud from [KBNet](https://github.com/alexklwong/calibrated-backprojection-network)* |
 | :----------------------------------------- |  :----------------------------------------- | :--------------------------------------------------------: |
-| <img src="figures/void_teaser_image_306.png" width="400"> | <img src="figures/void_teaser_sparse_point_cloud_306.gif" width="400">  | <img src="figures/void_teaser_kbnet_output_306.gif" width="400">  |
+| <img src="figures/void_teaser_image_306.png" width="200"> | <img src="figures/void_teaser_sparse_point_cloud_306.gif" width="200">  | <img src="figures/void_teaser_kbnet_output_306.gif" width="200">  |
 
 **Example 2: [KITTI dataset](http://www.cvlibs.net/datasets/kitti/) (outdoor lidar)**
 | *Input RGB image*    | *Output point cloud from [ScaffNet](https://github.com/alexklwong/learning-topology-synthetic-data)* |
 | :------------------------------------------ | :--------------------------------------------------------: |
-| <img src="figures/kitti_teaser_image.png" width="600"> | <img src="figures/kitti_teaser_scaffnet_output.gif" width="600"> |
+| <img src="figures/kitti_teaser_image.png" width="400"> | <img src="figures/kitti_teaser_scaffnet_output.gif" width="400"> |
 
 
 ## Current State of Depth Completion Methods <a name="current-state-of-depth-completion"></a>
@@ -37,6 +37,7 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 ### Unsupervised VOID Depth Completion Benchmark <a name="unsupervised-void-benchmark"></a>
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
+| Monitored Distillation for Positive Congruent Depth Completion| [ECCV 2022](https://arxiv.org/pdf/2203.16034.pdf) | [PyTorch](https://github.com/alexklwong/mondi-python) | **36.42** | **87.78**   | **19.18** | **43.83**  |
 | Unsupervised Depth Completion with Calibrated Backprojection Layers| [ICCV 2021](https://arxiv.org/pdf/2108.10531.pdf) | [PyTorch](https://github.com/alexklwong/calibrated-backprojection-network) | **39.80**  | **95.86**   | **21.16** | **49.72**  |
 | Learning Topology from Synthetic Data for Unsupervised Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2106.02994.pdf) | [Tensorflow](https://github.com/alexklwong/learning-topology-synthetic-data) | 60.68 | 122.01 | 35.24 | 67.34 |
 | Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | 85.05 | 169.79 | 48.92 | 104.02 |
@@ -47,6 +48,7 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
 | Non-Local Spatial Propagation Network for Depth Completion | [ECCV 2020](https://arxiv.org/pdf/2007.10042.pdf) | [PyTorch](https://github.com/zzangjinsun/NLSPN_ECCV20) | **26.74** | **79.12** | **12.70** | **33.88** |
+| Monitored Distillation for Positive Congruent Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2203.16034.pdf) | [PyTorch](https://github.com/alexklwong/mondi-python) |  **29.67** | **79.78**   | **14.84** | **37.88 **  |
 | PENet: Towards Precise and Efficient Image Guided Depth Completion (PENet) | [ICRA 2021](https://arxiv.org/abs/2103.00783) | [PyTorch](https://github.com/JUGGHM/PENet_ICRA2021) | 34.61 | 82.01 | 18.89 | 40.36 |
 | A Multi-Scale Guided Cascade Hourglass Network for Depth Completion | [WACV 2020](http://openaccess.thecvf.com/content_WACV_2020/papers/Li_A_Multi-Scale_Guided_Cascade_Hourglass_Network_for_Depth_Completion_WACV_2020_paper.pdf) | [PyTorch](https://github.com/anglixjtu/msg_chn_wacv20) | 43.57 | 109.94 | 23.44 | 52.09 |
 | PENet: Towards Precise and Efficient Image Guided Depth Completion (ENet) | [ICRA 2021](https://arxiv.org/abs/2103.00783) | [PyTorch](https://github.com/JUGGHM/PENet_ICRA2021) | 46.90 | 94.35 | 26.78 | 52.58 |
@@ -74,6 +76,7 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | CSPN++: Learning Context and Resource Aware Convolutional Spatial Propagation Networks for Depth Completion | [AAAI 2020](https://arxiv.org/pdf/1911.05377) | N/A | 209.28 | 743.69 | 0.90 | 2.07 |
 | Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [Tensorflow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 203.96 | 832.94 | 0.85 | 2.10 |
 | Adaptive context-aware multi-modal network for depth completion | [TIP 2021](https://arxiv.org/abs/2008.10833) | [PyTorch](https://github.com/sshan-zhao/ACMNet) | 206.80 | 732.99 | 0.90 | 2.08 |
+| Monitored Distillation for Positive Congruent Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2203.16034.pdf) | [PyTorch](https://github.com/alexklwong/mondi-python) |  218.60 | 785.06 | **0.92 | 2.11  |
 | PENet: Towards Precise and Efficient Image Guided Depth Completion | [ICRA 2021](https://arxiv.org/abs/2103.00783) | [PyTorch](https://github.com/JUGGHM/PENet_ICRA2021) | 210.55 | **730.08** | 0.94 | 2.17 |
 | FCFR-Net: Feature Fusion based Coarse- to-Fine Residual Learning for Depth Completion | [AAAI 2021](https://arxiv.org/pdf/2012.08270.pdf) | N/A | 217.15 | 735.81 | 0.98 | 2.20 |
 | Learning Guided Convolutional Network for Depth Completion | [TIP 2020](https://ieeexplore.ieee.org/document/9286883) | [PyTorch](https://github.com/kakaxi314/GuideNet) | 218.83 | 736.24 | 0.99 | 2.25 |
