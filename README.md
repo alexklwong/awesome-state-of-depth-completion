@@ -77,13 +77,15 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | Non-Local Spatial Propagation Network for Depth Completion | [ECCV 2020](https://arxiv.org/pdf/2007.10042.pdf) | [PyTorch](https://github.com/zzangjinsun/NLSPN_ECCV20) | 199.5 | 741.68 | 0.84 | 1.99 |
 | CompletionFormer: Depth Completion with Convolutions and Vision Transformers | [CVPR 2023](https://arxiv.org/pdf/2304.13030.pdf) | [PyTorch](https://github.com/youmi-zym/CompletionFormer) |203.45 | **708.87** | 0.88 | 2.01 |
 | SemAttNet: Towards Attention-based Semantic Aware Guided Depth Completion | [IEEE Access 2022](https://arxiv.org/pdf/2204.13635.pdf) | [PyTorch](https://github.com/danishnazir/SemAttNet) | 205.49  | 709.41 | 0.90 | 2.03 |
-| RigNet: Repetitive Image Guided Network for Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2107.13802.pdf) | N/A | 203.25 | 712.66 | 0.90 | 2.08 |
+| RigNet: Repetitive Image Guided Network for Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2107.13802.pdf) | N/A | 203.25 | 712.66 | 0.90 | 2.08 |	
 | MFF-Net: Towards Efficient Monocular Depth Completion with Multi-modal Feature Fusion | [RAL 2023](https://ieeexplore.ieee.org/iel7/7083369/7339444/10008014.pdf) | N/A | 208.11 | 719.85 | 0.94 | 2.21 |
 | CSPN++: Learning Context and Resource Aware Convolutional Spatial Propagation Networks for Depth Completion | [AAAI 2020](https://arxiv.org/pdf/1911.05377) | N/A | 209.28 | 743.69 | 0.90 | 2.07 |
 | Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [Tensorflow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 203.96 | 832.94 | 0.85 | 2.10 |
 | Adaptive context-aware multi-modal network for depth completion | [TIP 2021](https://arxiv.org/abs/2008.10833) | [PyTorch](https://github.com/sshan-zhao/ACMNet) | 206.80 | 732.99 | 0.90 | 2.08 |
 | PENet: Towards Precise and Efficient Image Guided Depth Completion | [ICRA 2021](https://arxiv.org/abs/2103.00783) | [PyTorch](https://github.com/JUGGHM/PENet_ICRA2021) | 210.55 | 730.08 | 0.94 | 2.17 |
 | Monitored Distillation for Positive Congruent Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2203.16034.pdf) | [PyTorch](https://github.com/alexklwong/mondi-python) |  218.60 | 785.06 | 0.92 | 2.11  |
+| MDANet: Multi-Modal Deep Aggregation Network for Depth Completion | [ICRA 2021](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9561490) | [PyTorch](https://github.com/USTC-Keyanjie/MDANet_ICRA2021) | 214.99 | 738.23 | 0.99 | 2.12 |
+| A Cascade Dense Connection Fusion Network for Depth Completion | [BMVC 2022](https://bmvc2022.mpi-inf.mpg.de/0843.pdf) | N/A | 216.05 | 738.26 | 0.99 | 2.18 |
 | FCFR-Net: Feature Fusion based Coarse- to-Fine Residual Learning for Depth Completion | [AAAI 2021](https://arxiv.org/pdf/2012.08270.pdf) | N/A | 217.15 | 735.81 | 0.98 | 2.20 |
 | Learning Guided Convolutional Network for Depth Completion | [TIP 2020](https://ieeexplore.ieee.org/document/9286883) | [PyTorch](https://github.com/kakaxi314/GuideNet) | 218.83 | 736.24 | 0.99 | 2.25 |
 | DenseLiDAR: A Real-Time Pseudo Dense Depth Guided Depth Completion Network | [ICRA 2021](https://ieeexplore.ieee.org/document/9357967) | N/A | 214.13 | 755.41 | 0.96 | 2.25 |
