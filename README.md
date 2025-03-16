@@ -58,7 +58,8 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 ### Unsupervised KITTI Depth Completion Benchmark <a name="unsupervised-kitti-benchmark"></a>
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
-| Unsupervised Depth Completion with Calibrated Backprojection Layers| [ICCV 2021](https://arxiv.org/pdf/2108.10531.pdf) | [PyTorch](https://github.com/alexklwong/calibrated-backprojection-network) | **256.76** | **1069.47** | **1.02**  | **2.95**  |
+| Monitored Distillation for Positive Congruent Depth Completion| [ECCV 2022](https://arxiv.org/pdf/2203.16034.pdf) | [PyTorch](https://github.com/alexklwong/mondi-python) | **218.60** | **785.06**   | **0.92** | **2.11**  |
+| Unsupervised Depth Completion with Calibrated Backprojection Layers| [ICCV 2021](https://arxiv.org/pdf/2108.10531.pdf) | [PyTorch](https://github.com/alexklwong/calibrated-backprojection-network) | 256.76 | 1069.47 | 1.02 | 2.95 |
 | Learning Topology from Synthetic Data for Unsupervised Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2106.02994.pdf) | [Tensorflow](https://github.com/alexklwong/learning-topology-synthetic-data) | 280.76 | 1121.93 | 1.15 | 3.30 |
 | Project to Adapt: Domain Adaptation for Depth Completion from Noisy and Sparse Sensor Data | [ACCV 2020](https://openaccess.thecvf.com/content/ACCV2020/papers/Lopez-Rodriguez_Project_to_Adapt_Domain_Adaptation_for_Depth_Completion_from_Noisy_ACCV_2020_paper.pdf) | [PyTorch](https://github.com/alopezgit/project-adapt) | 280.42 | 1095.26 | 1.19 | 3.53 |
 | Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [Tensorflow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | 299.41 | 1169.97 | 1.20 | 3.56 |
