@@ -75,7 +75,7 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
 | Dynamic Spatial Propagation Network for Depth Completion | [AAAI 2022](https://arxiv.org/pdf/2202.09769.pdf) | [N/A](https://github.com/Kyakaka/DySPN) | 192.71 | 709.12 | **0.82** | **1.88** |
-| Non-Local Spatial Propagation Network for Depth Completion | [ECCV 2020](https://arxiv.org/pdf/2007.10042.pdf) | [PyTorch](https://github.com/zzangjinsun/NLSPN_ECCV20) | 199.5 | 741.68 | 0.84 | 1.99 |
+| Non-Local Spatial Propagation Network for Depth Completion | [ECCV 2020](https://arxiv.org/pdf/2007.10042.pdf) | [PyTorch](https://github.com/zzangjinsun/NLSPN_ECCV20) | 199.59 | 741.68 | 0.84 | 1.99 |
 | CompletionFormer: Depth Completion with Convolutions and Vision Transformers | [CVPR 2023](https://arxiv.org/pdf/2304.13030.pdf) | [PyTorch](https://github.com/youmi-zym/CompletionFormer) |203.45 | **708.87** | 0.88 | 2.01 |
 | SemAttNet: Towards Attention-based Semantic Aware Guided Depth Completion | [IEEE Access 2022](https://arxiv.org/pdf/2204.13635.pdf) | [PyTorch](https://github.com/danishnazir/SemAttNet) | 205.49  | 709.41 | 0.90 | 2.03 |
 | RigNet: Repetitive Image Guided Network for Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2107.13802.pdf) | N/A | 203.25 | 712.66 | 0.90 | 2.08 |	
