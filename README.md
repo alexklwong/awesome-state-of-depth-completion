@@ -60,29 +60,29 @@ Here we compile both unsupervised/self-supervised (monocular and stereo) and sup
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
 | Monitored Distillation for Positive Congruent Depth Completion| [ECCV 2022](https://arxiv.org/pdf/2203.16034.pdf) | [PyTorch](https://github.com/alexklwong/mondi-python) | **218.60** | **785.06**   | **0.92** | **2.11**  |
 | Unsupervised Depth Completion with Calibrated Backprojection Layers| [ICCV 2021](https://arxiv.org/pdf/2108.10531.pdf) | [PyTorch](https://github.com/alexklwong/calibrated-backprojection-network) | 256.76 | 1069.47 | 1.02 | 2.95 |
-| Learning Topology from Synthetic Data for Unsupervised Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2106.02994.pdf) | [TensorFlow](https://github.com/alexklwong/learning-topology-synthetic-data) | 280.76 | 1121.93 | 1.15 | 3.30 |
 | Project to Adapt: Domain Adaptation for Depth Completion from Noisy and Sparse Sensor Data | [ACCV 2020](https://openaccess.thecvf.com/content/ACCV2020/papers/Lopez-Rodriguez_Project_to_Adapt_Domain_Adaptation_for_Depth_Completion_from_Noisy_ACCV_2020_paper.pdf) | [PyTorch](https://github.com/alopezgit/project-adapt) | 280.42 | 1095.26 | 1.19 | 3.53 |
+| Learning Topology from Synthetic Data for Unsupervised Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2106.02994.pdf) | [TensorFlow](https://github.com/alexklwong/learning-topology-synthetic-data) | 280.76 | 1121.93 | 1.15 | 3.30 |
+| A Surface Geometry Model for LiDAR Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2104.08466.pdf) | [TensorFlow](https://github.com/placeforyiming/RAL_Non-Learning_DepthCompletion) | 298.30 | 1239.84 | 1.21 | 3.76 |
 | Unsupervised Depth Completion from Visual Inertial Odometry | [RA-L & ICRA 2020](https://arxiv.org/pdf/1905.08616.pdf) | [TensorFlow](https://github.com/alexklwong/unsupervised-depth-completion-visual-inertial-odometry) | 299.41 | 1169.97 | 1.20 | 3.56 |
-| A Surface Geometry Model for LiDAR Depth Completion | [RA-L & ICRA 2021](https://arxiv.org/pdf/2104.08466.pdf) | [TensorFlow](https://github.com/placeforyiming/RAL_Non-Learning_DepthCompletion) | 298.3 | 1239.84 | 1.21 | 3.76 |
-| Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [TensorFlow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 343.46 | 1263.19 | 1.32 | 3.58 |
-| DFuseNet: Deep Fusion of RGB and Sparse Depth Information for Image Guided Dense Depth Completion | [ITSC 2019](https://arxiv.org/pdf/1902.00761) | [PyTorch](https://github.com/ShreyasSkandanS/DFuseNet) | 429.93 | 1206.66 | 1.79 | 3.62 |
 | In Defense of Classical Image Processing: Fast Depth Completion on the CPU | [CRV 2018](https://arxiv.org/pdf/1802.00036) | [Python](https://github.com/kujason/ip_basic) | 302.60 | 1288.46 | 1.29 | 3.78 |
+| Dense depth posterior (ddp) from single image and sparse range | [CVPR 2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Dense_Depth_Posterior_DDP_From_Single_Image_and_Sparse_Range_CVPR_2019_paper.pdf) | [TensorFlow](https://github.com/YanchaoYang/Dense-Depth-Posterior) | 343.46 | 1263.19 | 1.32 | 3.58 |
 | Self-supervised Sparse-to-Dense: Self- supervised Depth Completion from LiDAR and Monocular Camera | [ICRA 2019](https://arxiv.org/pdf/1807.00275) | [PyTorch](https://github.com/fangchangma/self-supervised-depth-completion) | 350.32 | 1299.85 | 1.57 | 4.07 |
+| DFuseNet: Deep Fusion of RGB and Sparse Depth Information for Image Guided Dense Depth Completion | [ITSC 2019](https://arxiv.org/pdf/1902.00761) | [PyTorch](https://github.com/ShreyasSkandanS/DFuseNet) | 429.93 | 1206.66 | 1.79 | 3.62 |
 | Semantically Guided Depth Upsampling | [GCPR 2016](https://arxiv.org/pdf/1608.00753) | N/A | 605.47 | 2312.57 | 2.05 | 7.38 |
 
 
 ### Supervised KITTI Depth Completion Benchmark <a name="supervised-kitti-benchmark"></a>
 | Paper | Publication | Code | MAE | RMSE | iMAE | iRMSE |
 | :---- | :---------: | :--: | :-: | :--: | :--: | ----: |
-| CompletionFormer: Depth Completion with Convolutions and Vision Transformers (L1) | [CVPR 2023](https://arxiv.org/pdf/2304.13030.pdf) | [PyTorch](https://github.com/youmi-zym/CompletionFormer) | 183.88 | 764.87 | 0.80 | 1.89 |
+| CompletionFormer: Depth Completion with Convolutions and Vision Transformers (L1) | [CVPR 2023](https://arxiv.org/pdf/2304.13030.pdf) | [PyTorch](https://github.com/youmi-zym/CompletionFormer) | **183.88** | 764.87 | **0.80** | 1.89 |
 | Improving Depth Completion via Depth Feature Upsampling | [CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_Improving_Depth_Completion_via_Depth_Feature_Upsampling_CVPR_2024_paper.pdf) | [PyTorch](https://github.com/YufeiWang777/DFU) | 187.95 | 686.46 | 0.81 | 1.83 |
-| Tri-Perspective View Decomposition for Geometry-Aware Depth Completion | [CVPR 2024](https://arxiv.org/pdf/2403.15008) | [PyTorch](https://yanzq95.github.io/projectpage/TOFDC/index.html) | 188.60 | 693.97 | 0.81 | 1.82 |
+| Tri-Perspective View Decomposition for Geometry-Aware Depth Completion | [CVPR 2024](https://arxiv.org/pdf/2403.15008) | [PyTorch](https://yanzq95.github.io/projectpage/TOFDC/index.html) | 188.60 | 693.97 | 0.81 | **1.82** |
 | BEVDC: Bird's-Eye View Assisted Training for Depth Completion | [CVPR 2023](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_BEVDC_Birds-Eye_View_Assisted_Training_for_Depth_Completion_CVPR_2023_paper.pdf) | N/A | 189.44 | 697.44 | 0.82 | 1.83 |
 | LRRU: Long-short Range Recurrent Updating Networks for Depth Completion (L1+L2) | [ICCV 2023](https://arxiv.org/pdf/2310.08956) | [PyTorch](https://github.com/YufeiWang777/LRRU) | 189.96 | 696.51 | 0.81 | 1.87 |
 | Robust Depth Completion with Uncertainty-Driven Loss Functions | [AAAI 2022](https://arxiv.org/pdf/2112.07895) | N/A | 190.88 | 795.61 | 0.83 | 1.98 |
 | Dynamic Spatial Propagation Network for Depth Completion | [AAAI 2022](https://arxiv.org/pdf/2202.09769.pdf) | [PyTorch](https://github.com/Kyakaka/DySPN) | 192.71 | 709.12 | 0.82 | 1.88 |
 | OGNI-DC: Robust Depth Completion with Optimization-Guided Neural Iterations | [ECCV 2024](https://arxiv.org/pdf/2406.11711) | [PyTorch](https://github.com/princeton-vl/OGNI-DC) | 193.20 | 708.38 | 0.83 | 1.86 |
-| Bilateral Propagation Network for Depth Completion | [CVPR 2024](https://arxiv.org/pdf/2403.11270) | [PyTorch](https://github.com/kakaxi314/BP-Net) | 194.69 | 684.90 | 0.84 | 1.82 |
+| Bilateral Propagation Network for Depth Completion | [CVPR 2024](https://arxiv.org/pdf/2403.11270) | [PyTorch](https://github.com/kakaxi314/BP-Net) | 194.69 | **684.90** | 0.84 | **1.82** |
 | LRRU: Long-short Range Recurrent Updating Networks for Depth Completion (L2) | [ICCV 2023](https://arxiv.org/pdf/2310.08956) | [PyTorch](https://github.com/YufeiWang777/LRRU) | 198.31 | 695.67 | 0.86 | 2.18 |
 | Non-Local Spatial Propagation Network for Depth Completion | [ECCV 2020](https://arxiv.org/pdf/2007.10042.pdf) | [PyTorch](https://github.com/zzangjinsun/NLSPN_ECCV20) | 199.59 | 741.68 | 0.84 | 1.99 |
 | RigNet: Repetitive Image Guided Network for Depth Completion | [ECCV 2022](https://arxiv.org/pdf/2107.13802.pdf) | N/A | 203.25 | 712.66 | 0.90 | 2.08 |
